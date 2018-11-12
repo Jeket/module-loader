@@ -2,13 +2,13 @@
 
 namespace KodiCMS\ModulesLoader;
 
-use Illuminate\Console\AppNamespaceDetectorTrait;
+use Illuminate\Console\DetectsApplicationNamespace;
 use Illuminate\Foundation\Application;
 use KodiCMS\ModulesLoader\Contracts\ModuleContainerInterface;
 
 class ModulesLoader
 {
-    use AppNamespaceDetectorTrait;
+    use DetectsApplicationNamespace;
 
     /**
      * @var array
